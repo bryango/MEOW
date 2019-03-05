@@ -12,7 +12,7 @@
 
 ## 与netheril96版MEOW的差别
 * IPv6可以选择是否走代理
-* 去除内建的 ssh 代理、shadowsocks 代理、meow-ss 代理 （simple is the best)
+* 去除内建的 ssh 代理、shadowsocks 代理、meow-ss 代理 （simple is the best）
 * 所有配置文件默认统一为 meow 执行文件所在目录，所有配置文件后缀为 "*.conf"
 * 在配置文件中增加 DProxy 参数，用于指定国内IP走的代理设置，用于某些特殊场合
 
@@ -52,7 +52,7 @@
 - 检查域名是否在强制使用代理列表中，如果在则通过代理连接
 - **检查域名的 IP 是否为国内 IP**
     - 通过本地 DNS 解析域名，得到域名的 IP
-    - 如果是国内 IP: 
+    - 如果是国内 IP:
         + 若有 DProxy 参数，则走 DProxy 指定的代理
         + 若无 DProxy 参数，则直连
     - 如果不是国内 IP，则走 "proxy" 参数指定的代理
@@ -60,7 +60,7 @@
 
 ## 直连列表
 
-直接连接的域名列表保存在 `./direct.conf` 
+直接连接的域名列表保存在 `./direct.conf`
 
 匹配域名**按 . 分隔的后两部分**或者**整个域名**，例子：
 

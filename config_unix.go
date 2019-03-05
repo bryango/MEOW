@@ -13,7 +13,9 @@ const (
 )
 
 func getDefaultRcFile() string {
-	//return path.Join(path.Join(getUserHomeDir(), ".meow", rcFname))
-
+	var homeConfigDir = path.Join(getUserHomeDir(), ".meow")
+	if _, err := os.Stat(homeConfigDir); err == nil {
+		return path.Join(path.Join(homeConfigDir, rcFname))
+	}
 	return rcFname
 }
