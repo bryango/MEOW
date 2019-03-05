@@ -2,6 +2,10 @@
 
 package main
 
+import (
+	"path"
+)
+
 const (
 	rcFname     = "rc.conf"
 	directFname = "direct.conf"
